@@ -4,11 +4,14 @@ import { Router } from '@solidjs/router'
 
 import './index.css';
 import App from './App';
+import Rewind from 'solid-rewind';
 
 render(() => (
+  <Rewind>
     <Router>
-       <App />
+      <App />
     </Router>
+  </Rewind>
   ), 
   document.getElementById('root')
 );
