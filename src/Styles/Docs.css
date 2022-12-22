@@ -1,0 +1,92 @@
+.docMain {
+  display: flex;
+  align-content: flex-start;
+  margin-top: 60px;
+  border-bottom: solid 0.5px#d4d4d4;
+}
+
+.sideNav {
+  padding: 20px;
+  font-size: 12px;
+  width: 15vw;
+  border-right: solid 0.5px#d4d4d4;
+}
+
+.sideNav a {
+  text-decoration: none;
+  color: black;
+}
+
+.installationPage {
+  padding: 50px;
+}
+.installationLink a{
+  color: #4a919e
+}
+.installationLink a:visited{
+  color: #4a919e;
+}
+
+.installContainer{
+  display: flex;
+  align-items: center;
+  background-color: #bed3c3;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.installContainer button{
+  background: '.././Icons/clipboard.png';
+}
+.docFooter {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.docFooterList h1 {
+  font-size: 20px;
+}
+
+.docFooterList a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+.docFooterList li {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  justify-content: space-evenly;
+}
+
+.docFooterList {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.docFooterList div {
+  margin: 10px 30px;
+}
+
+.basicUsagePage{
+  padding: 50px;
+}
+
+.basicUsagePage p{
+  font-size: larger;
+  width: 60vw;
+}
+
+.coreConceptsPage{
+  padding: 50px;
+}
+
+.coreConceptsPage p{
+  font-size: larger;
+  width: 60vw;
+}

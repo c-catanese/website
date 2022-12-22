@@ -1,0 +1,292 @@
+* {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+body {
+  margin: 0px;
+}
+
+.navBar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  margin-top: 0px;
+  justify-content: space-between;
+  border-bottom: solid 0.5px#d4d4d4;
+}
+
+.navBar img {
+  height: 55px;
+  margin: 5px 22px;
+}
+
+.nav {
+  width: 100px;
+  height: 0px;
+  margin: 10px 5px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: #3c5a82;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.docsUL {
+  padding-left: 0px;
+  list-style: none
+}
+
+.docsNav {
+  color: #212e53;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.homepage {
+  display: grid;
+}
+.getStartedContainer{
+  background: linear-gradient(0deg,  #bed3c3 50%, #4a919e 100%); 
+}
+
+.getStarted {
+  margin-top: 400px;
+  text-align: center;
+  height: 45vh;
+}
+/* @media screen and (min-width: 601px){
+  h1.getStarted{
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 600px){
+  h1.getStarted{
+    font-size: 65px;
+  } */
+/* } */
+
+.getStarted h1 {
+  color: #212e53;
+}
+
+.getStarted h3 {
+  color: #212e53;
+  font-size: 24px;
+}
+
+.getStarted button {
+  background-color: #bed3c3;
+  padding: 10px;
+  border-radius: 1px;
+  border: 0px;
+  margin: 10px 20px;
+}
+
+.getStarted a {
+  text-decoration: none;
+  color: #212e53;
+  box-shadow: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.welcomeContainer {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.welcomeContainer p {
+  color: #212e53;
+  font-size: 20px;
+}
+
+.welcomeContainer button {
+  background-color: #212e53;
+  padding: 10px;
+  border: 0px;
+}
+
+.welcomeContainer button a {
+  text-decoration: none;
+  color: #e9e9e9;
+  box-shadow: rgb(0, 0, 0);
+  font-size: 17px;
+  width: fit-content;
+}
+
+
+.contributors {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  min-width: 800px;
+  background-color: #bed3c3;
+}
+.contibutorsHeader{
+  justify-self: center;
+  text-align: center;
+  color: #212e53;
+}
+.contributors :nth-child(1){
+  flex-basis: 100%;
+}
+.contributors :nth-child(6){
+  flex-basis: 100%;
+}
+
+.contributor {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 300px;
+  background-color: #212e53;
+  border-radius: 5px;
+  margin-top: 2vh;
+  margin-bottom: 40px;
+  color: #e9e9e9;
+}
+.contributor :nth-child(2){
+  flex-basis: 100%;
+}
+
+.contributor h3 {
+  margin: 10px;
+}
+
+.contributor img {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+}
+.contributor a img{
+  height: 30px;
+  width: 30px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #212e53;
+  /* background: linear-gradient(0deg,  #212e53 20%, #bed3c3 100%);  */
+  height: 500px;
+}
+
+.previewColOne{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+}
+
+.previewColTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 20vw;
+}
+
+.preview h1 {
+  color: #bed3c3
+}
+
+.preview h3 {
+  color: #bed3c3
+}
+
+.preview button {
+  background-color: #bed3c3;
+  padding: 10px;
+  border-radius: 1px;
+  border: 0px;
+  margin: 10px 20px;
+}
+
+.preview a {
+  text-decoration: none;
+  color: #212e53;
+  box-shadow: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.installation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: right;
+  background-color: #212e53;
+  height: 500px;
+}
+
+.installation h1 {
+  color: #b4c0c1;
+}
+
+.installation h3 {
+  color: #b4c0c1;
+}
+
+.installation button {
+  background-color: #3c5a82;
+  padding: 10px;
+  border: 0px;
+}
+
+.installation a {
+  text-decoration: none;
+  color: #212e53;
+  box-shadow: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+
+
+.homeFooter {
+  background: #4a919e;
+  margin: auto;
+  width: 100vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.homeFooter h1 {
+  font-size: 20px;
+}
+
+.homeFooter a {
+  text-decoration: none;
+  color: #212e53;
+  font-size: 17px;
+  justify-content: space-evenly;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  color: #212e53;
+}
+
+.footerList div {
+  margin: 10px 30px;
+}
