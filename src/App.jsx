@@ -6,6 +6,7 @@ import Installation from './pages/DocsPages/Installation'
 import Basicusage from './pages/DocsPages/BasicUsage';
 import Coreconcepts from './pages/DocsPages/CoreConcepts';
 import logo from '../src/logo/logo.png'
+import Todo from './Todo';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
       <Routes>
         <Route path="/" component={Home} />
         <Route path="/docs" component={Installation}/>
-        <Route path="/docs/installation" component={Installation} /> 
+          <Route path="/docs/installation" component={Installation} /> 
+          <Route path="/demo" component={Todo} />
         <Route path="/docs/basicusage" component={Basicusage} /> 
         <Route path="/docs/coreconcepts" component={Coreconcepts} /> 
       </Routes>

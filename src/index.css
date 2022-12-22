@@ -24,7 +24,7 @@ body {
 
 .nav {
   width: 100px;
-  height: 0px;
+  height: 44px;
   margin: 10px 5px;
   padding: 5px;
   display: inline-flex;
@@ -290,3 +290,4 @@ body {
 .footerList div {
   margin: 10px 30px;
 }
+

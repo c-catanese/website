@@ -23,12 +23,12 @@ function Installation() {
             <h3>To install and save in your package.json dependencies, run the command below using npm:</h3>
             <div class ='installContainer'>
               <h4>npm install solid-rewind</h4>
-              <button type = "image"  onClick={() => {navigator.clipboard.writeText('npm install solid-rewind')}}></button>
+              <button type = "image"  onClick={() => {navigator.clipboard.writeText('npm install solid-rewind')}}>Copy</button>
             </div>
             <h2>yarn</h2>
             <div class ='installContainer'>
               <h4>yarn add solid-rewind</h4>
-              <button type = "image"  onClick={() => {navigator.clipboard.writeText('yarn add solid-rewind')}}></button>
+              <button type = "image"  onClick={() => {navigator.clipboard.writeText('yarn add solid-rewind')}}>Copy</button>
             </div>
             <h3 class = 'installationLink'>After you've installed Rewind, head over to <a href="">Basic Usage</a> to see how to use the tool.</h3> 
           </main>
