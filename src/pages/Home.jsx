@@ -1,7 +1,8 @@
 import { render } from 'solid-js/web';
 import { Routes, Route } from '@solidjs/router'
 import { createSignal, getOwner } from 'solid-js';
-import logo from '../assets/solid-rewind-logo.svg'
+import logo from '../assets/solid-rewind-logo.svg';
+import screenshot from '../assets/screenshots/screenshot-1.png';
 
 
 function Home() {
@@ -46,7 +47,9 @@ function Home() {
         </div>
 
         <div class='twoThird'>
-          right
+          <figure class='fullbox aboutImage'>
+            <img class='transparent' src={screenshot}></img>
+          </figure>
         </div>
         
       </section>
@@ -61,6 +64,9 @@ function Home() {
         <article class='oneHalf'>
           <br></br><br></br><br></br><br></br>
           Install the npm package
+          <div id='copyWindow'>
+            npm i solid-rewind
+          </div>
           <br></br><br></br><br></br><br></br>
           Import Rewind. Wrap Rewind around the top-level component.
           <br></br><br></br><br></br><br></br>
@@ -87,7 +93,9 @@ function Home() {
         </div>
 
         <div class='twoThird smallerPadding'>
-          right
+          <figure class='fullbox aboutImage'>
+            <img class='transparent' src={screenshot}></img>
+          </figure>
         </div>
       </section>
 
