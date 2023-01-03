@@ -1,6 +1,6 @@
 import { render } from 'solid-js/web';
 import { Routes, Route } from '@solidjs/router'
-import '../Styles/Docs.css'
+import '../style/docs-style.css'
 
 function Docs() {
   return (

@@ -1,6 +1,6 @@
 import { createEffect, createSignal, getOwner } from "solid-js";
 import { nanoid } from "nanoid";
-import "./Styles/Todo.css"
+import "./style/todo-style.css"
 
 const Todo = () => {
 
