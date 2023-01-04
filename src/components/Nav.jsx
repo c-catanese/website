@@ -1,8 +1,15 @@
 
 function Nav() {
+  
+  function scrollToId(target) {
+    let element = document.getElementById(target);
+    element && element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   return (
     <nav class='nav'>
-      <div class='navItem leftNavItem'><a href='/#install'>Get Started</a></div>
+      {/* href='/#install' */}
+      <div class='navItem leftNavItem'><a onclick={()=>scrollToId('install')} >Get Started</a></div>
       <div class='navSpacer'></div>
       <div class='navItem'><a href='/demo'>Demo</a></div>
       <div class='navItem'><a href='/docs/installation'>Docs</a></div>

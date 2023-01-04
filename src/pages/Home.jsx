@@ -43,7 +43,7 @@ function Home() {
             And how easy it is to install.
           </p>
           <br></br><br></br>
-          <button>GET STARTED</button>
+          {/* <button>GET STARTED</button> */}
         </div>
 
         <div class='twoThird'>
@@ -64,8 +64,10 @@ function Home() {
         <article class='oneHalf'>
           <br></br><br></br><br></br><br></br>
           Install the npm package
-          <div id='copyWindow'>
-            npm i solid-rewind
+          <div class='flex'>
+            <div id='copyWindow'>
+              npm i solid-rewind
+            </div>
           </div>
           <br></br><br></br><br></br><br></br>
           Import Rewind. Wrap Rewind around the top-level component.
