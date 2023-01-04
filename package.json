@@ -19,6 +19,12 @@
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "@codemirror/lang-javascript": "^6.1.2",
+    "@codemirror/lang-python": "^6.1.1",
+    "@codemirror/theme-one-dark": "^6.1.0",
+    "@solid-codemirror/codemirror": "^1.0.4",
+    "codemirror": "^6.0.1",
+    "solid-codemirror": "^2.2.1",
     "solid-rewind": "^0.0.41"
   }
 }

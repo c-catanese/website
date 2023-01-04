@@ -4,8 +4,31 @@ import { createSignal, getOwner } from 'solid-js';
 import logo from '../assets/solid-rewind-logo.svg';
 import screenshot from '../assets/screenshots/screenshot-1.png';
 
+import RewindWrapper from '../components/RewindWrap'
+
+// import { createCodeMirror } from 'solid-codemirror';
+import { javascript } from "@codemirror/lang-javascript";
+
+import { CodeMirror } from "@solid-codemirror/codemirror";
+import { basicSetup } from "codemirror";
+import { python } from "@codemirror/lang-python";
+import { oneDark } from "@codemirror/theme-one-dark";
+
 
 function Home() {
+
+  const [copyMesg, showCopyMesg] = createSignal(false)
+
+  function copyNpm() {
+    navigator.clipboard.writeText('npm i solid-rewind');
+    document.getElementById('copyMesg').style.opacity = 1;
+    setTimeout(hideMesg, 1400);
+  }
+
+  function hideMesg() {
+    document.getElementById('copyMesg').style.opacity = 0;
+  }
+  
 
   return (
      <>
@@ -65,12 +88,20 @@ function Home() {
           <br></br><br></br><br></br><br></br>
           Install the npm package
           <div class='flex'>
-            <div id='copyWindow'>
+            <div id='copyWindow' onclick={ copyNpm }>
               npm i solid-rewind
+              <div id='copyBtnBox'>
+                <div id='copyIcon'></div>
+                <div id='copyMesg'>copied</div>
+              </div>
             </div>
           </div>
           <br></br><br></br><br></br><br></br>
           Import Rewind. Wrap Rewind around the top-level component.
+
+          <RewindWrapper />
+          {/* <CodeMirror extensions={[basicSetup, python()]} theme={oneDark} showLineNumbers={true} readOnly={true} wrapLine={true} value="print()" /> */}
+
           <br></br><br></br><br></br><br></br>
           Use the Solid-Rewind Chrome Extension to debug your app.
           <br></br>
