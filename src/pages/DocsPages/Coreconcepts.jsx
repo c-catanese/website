@@ -1,8 +1,10 @@
 import { render } from 'solid-js/web';
 import { Routes, Route } from '@solidjs/router'
-
+import Nav from '../../components/Nav';
 function Coreconcepts() {
   return (
+  <>
+    <Nav/>
     <div>
     <div class="docMain">
       <nav class='sideNav'>
@@ -40,6 +42,7 @@ function Coreconcepts() {
   </footer>
     
   </div>
+  </>
  );
 }
 

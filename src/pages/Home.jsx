@@ -3,7 +3,7 @@ import { Routes, Route } from '@solidjs/router'
 import { createSignal, getOwner } from 'solid-js';
 import logo from '../assets/solid-rewind-logo.svg';
 import screenshot from '../assets/screenshots/screenshot-1.png';
-
+import Nav from '../components/Nav';
 import RewindWrapper from '../components/RewindWrap'
 
 // import { createCodeMirror } from 'solid-codemirror';
@@ -32,6 +32,7 @@ function Home() {
 
   return (
      <>
+     <Nav />
       <header id='hero'>
 
         <div id='heroContent'>
